@@ -1,0 +1,204 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    padding: 30px;
+}
+
+/* Main Container */
+.container {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 28px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 27px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+/* Add Student Button */
+.add-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    background: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.add-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+/* Responsive Table Wrapper */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+}
+
+/* Student Table */
+table {
+    width: 100%;
+    min-width: 750px;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+thead {
+    background: #f8fafc;
+}
+
+th {
+    padding: 16px 14px;
+    color: #475569;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: left;
+    white-space: nowrap;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+td {
+    padding: 15px 14px;
+    font-size: 14px;
+    color: #334155;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background: #f8fafc;
+}
+
+/* Action Icons */
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.actions form {
+    display: inline-flex;
+    margin: 0;
+}
+
+/* Common Icon Button */
+.action-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* View Icon */
+.view-btn {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.view-btn:hover {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+/* Edit Icon */
+.edit-btn {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.edit-btn:hover {
+    background: #15803d;
+    color: #ffffff;
+}
+
+/* Delete Icon */
+.delete-btn {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.delete-btn:hover {
+    background: #dc2626;
+    color: #ffffff;
+}
+
+/* Empty Table Message */
+.empty {
+    padding: 35px;
+    text-align: center;
+    color: #64748b;
+    font-size: 15px;
+}
+
+/* Links */
+a {
+    transition: all 0.2s ease;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    .container {
+        margin: 10px auto;
+        padding: 16px;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .header {
+        align-items: flex-start;
+    }
+
+    .add-btn {
+        padding: 10px 13px;
+    }
+}

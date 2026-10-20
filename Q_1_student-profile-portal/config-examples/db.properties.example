@@ -1,0 +1,20 @@
+# ============================================================
+#  Student Profile Portal - configuration
+#  EDIT THIS FILE to match your machine, then rebuild/redeploy.
+#  NOTE: always use forward slashes (/) in paths, even on Windows.
+# ============================================================
+
+# --- MySQL connection ---
+db.url=jdbc:mysql://localhost:3306/student_portal?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&characterEncoding=UTF-8
+db.username=root
+db.password=your_mysql_password
+
+# --- Folder that contains the uploaded images/documents ---
+# The values stored in students.image_path / students.document_path are
+# file names (or sub-paths) RELATIVE to this folder.
+# Windows example : C:/student_portal_uploads
+# Linux/Mac example: /home/yourname/student_portal_uploads
+upload.dir=C:/student_portal_uploads
+
+# --- Login session timeout (minutes of inactivity) ---
+session.timeout.minutes=30

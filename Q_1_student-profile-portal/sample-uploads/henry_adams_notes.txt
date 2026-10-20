@@ -1,0 +1,2 @@
+Sample plain-text document for Henry Adams.
+Stored in the upload folder and streamed by FileServlet.
